@@ -1,0 +1,13 @@
+$relative-link-to-modules: '/fonts';
+
+// 400 - normal
+@include font-face('Montserrat', 'Montserrat-Regular', '400', 'normal', $relative-link-to-modules);
+
+// 500 - medium
+@include font-face('Montserrat', 'Montserrat-Medium', '500', 'normal', $relative-link-to-modules);
+
+// 600 - semi-bold
+@include font-face('Montserrat', 'Montserrat-SemiBold', '600', 'normal', $relative-link-to-modules);
+
+// 700 - bold
+@include font-face('Montserrat', 'Montserrat-Bold', '700', 'normal', $relative-link-to-modules);

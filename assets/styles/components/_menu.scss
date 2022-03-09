@@ -1,0 +1,60 @@
+.menu {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        display: none;
+    }
+
+    &-icon {
+        width: 1.5rem;
+        display: block;
+        position: relative;
+
+        i {
+            height: 0.1875rem;
+            width: 100%;
+            display: block;
+            background: $primary;
+            transition: $transition--fast;
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                transform-origin: right;
+            }
+
+            &:nth-child(2) {
+                width: 80%;
+                margin-left: auto;
+                margin-right: 0;
+            }
+
+            &:not(:nth-child(3)) {
+                margin-bottom: 0.3125rem;
+            }
+        }
+
+        &[aria-expanded='true'] {
+            i {
+                &:nth-child(1) {
+                    transform: rotate(-45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    &-drop {
+        display: none;
+        min-width: unset;
+        padding: 0 0.75rem 1.125rem 1.125rem;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+        color: inherit;
+        margin: 0;
+    }
+}
