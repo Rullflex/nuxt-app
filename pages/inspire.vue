@@ -15,7 +15,8 @@
 </template>
 
 <script>
-export default {
-    name: 'InspirePage',
-};
+import { Vue, Component } from 'vue-property-decorator';
+
+@Component
+export default class InspirePage extends Vue {}
 </script>

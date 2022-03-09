@@ -57,7 +57,8 @@
 </template>
 
 <script>
-export default {
-    name: 'IndexPage',
-};
+import { Vue, Component } from 'vue-property-decorator';
+
+@Component
+export default class IndexPage extends Vue {}
 </script>
